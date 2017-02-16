@@ -87,6 +87,6 @@
     "require-dir": "^0.3.1"
   },
   "engines": {
-  "node": "6.4.0"
+    "node": "6.4.0"
   }
 }
