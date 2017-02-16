@@ -1,9 +1,9 @@
 {
-  "name": "angular-gulp-setup",
+  "name": "wdi-project-4",
   "description": "A example stack with gulp and angular",
   "main": "index.js",
   "authors": [
-    "alexpchin <alex@alexchin.co.uk>"
+    "OwlMan77 <jeanmarc.mcghee@gmail.com>"
   ],
   "license": "ISC",
   "homepage": "",
