@@ -1,6 +1,15 @@
-userFactory.$inject = ['API', '$resource'];
-function userFactory(API, $resource){
-  return $resource(`${API}/users/:id`, { id: '@_id'}, {
-    'register': { method: 'POST', url: `${API}/register` }
-  });
+RegisterCtrl.$inject = ['User'];
+function RegisterCtrl(User) {
+  const vm    = this;
+
+  vm.register =  () => {
+    User.register(vm.user)
+    .promise
+    .then(data => {
+      console.log(data);
+    }, err => {
+      console.log(err);
+    }
+  )
+  };
 }
