@@ -15,6 +15,7 @@ function CurrentUserService(TokenService, $rootScope){
     },
     getUser(user){
       return currentUser;
+      console.log(currentUser);
     },
     clearUser(){
       currentUser = null;

@@ -7,7 +7,7 @@ function RegisterCtrl(User) {
 
   vm.register =  () => {
     User.register(vm.user)
-    .promise
+    .$promise
     .then(data => {
       console.log(data);
     }, err => {
