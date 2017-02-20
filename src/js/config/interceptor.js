@@ -1,15 +1,8 @@
 angular
-.module('Diabetus')
-.factory('AuthInterceptor', AuthInterceptor);
+  .module('angularAuthentication')
+  .config(Interceptor);
 
-AuthInterceptor.$inject = [];
-function AuthInterceptor() {
-  return {
-    request(config) {
-      return config;
-    },
-    response(res) {
-      return res;
-    }
-  };
+Interceptor.$inject = ['$httpProvider'];
+function Interceptor($httpProvider) {
+  return $httpProvider.interceptors.push('AuthInterceptor');
 }
