@@ -1,8 +1,8 @@
 angular
 .module('Diabetus')
-.controller('MainCtrl', MainCtrl)
+.controller('MainCtrl', MainCtrl);
 
-MainCtrl.$inject =['$rootScope', '$state', 'CurrentUserService']
+MainCtrl.$inject =['$rootScope', '$state', 'CurrentUserService'];
 function MainCtrl($rootScope, CurrentUserService, $state){
 const vm = this;
 vm.user = CurrentUserService.getUser();
@@ -18,5 +18,5 @@ vm.logout = () => {
 
 $rootScope.$on('loggedOut', () => {
   vm.user = null;
-  $state.go('home')});
+  $state.go('home');});
 }
