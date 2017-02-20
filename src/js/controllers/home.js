@@ -6,6 +6,6 @@ HomeCtrl.$inject = ["User", "CurrentUserService", "$state"];
 function HomeCtrl(User, CurrentUserService, $state){
   const vm = this;
 
-  if (CurrentUserService.getUser()) $state.go("auctionsIndex");
+  if (CurrentUserService.getUser()) $state.go("Home");
 
 }
