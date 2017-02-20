@@ -1,5 +1,5 @@
 angular
-  .module('angularAuthentication')
+  .module('Diabetus')
   .config(Interceptor);
 
 Interceptor.$inject = ['$httpProvider'];
