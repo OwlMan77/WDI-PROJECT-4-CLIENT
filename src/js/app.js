@@ -1,4 +1,3 @@
-
 angular
 .module('Diabetus', [
   'ui-router',
