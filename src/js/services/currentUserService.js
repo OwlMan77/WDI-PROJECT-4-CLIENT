@@ -1,8 +1,8 @@
 angular
 .module('Diabetus')
-.service('CurrentUserService', CurrentUserService)
+.service('CurrentUserService', CurrentUserService);
 
-CurrentUserService.$inject = ['TokenService', '$rootScope']
+CurrentUserService.$inject = ['TokenService', '$rootScope'];
 function CurrentUserService(TokenService, $rootScope){
   let currentUser = TokenService.decodeToken();
 
@@ -11,7 +11,7 @@ function CurrentUserService(TokenService, $rootScope){
     saveUser(user) {
       user.id = user.id? user.id : user._id;
       currentUser = user;
-      $rootScope.$broadcast('loggedIn')
+      $rootScope.$broadcast('loggedIn');
     },
     getUser(user){
       return currentUser;
@@ -19,7 +19,7 @@ function CurrentUserService(TokenService, $rootScope){
     clearUser(){
       currentUser = null;
       TokenService.clearToken();
-      $rootScope.$broadcast('loggedOut')
+      $rootScope.$broadcast('loggedOut');
         }
-  }
+  };
 }

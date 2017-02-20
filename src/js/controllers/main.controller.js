@@ -2,13 +2,13 @@ angular
 .module('Diabetus')
 .controller('MainCtrl', MainCtrl)
 
-MainCtrl.$inject =['$rootScope', '$state' 'CurrentUserService']
-function MainCtrl($rootScope, CurrentUserService, $state)
+MainCtrl.$inject =['$rootScope', '$state', 'CurrentUserService']
+function MainCtrl($rootScope, CurrentUserService, $state){
 const vm = this;
 vm.user = CurrentUserService.getUser();
-$rootScope.$on("loggedIn", () => {
+$rootScope.$on('loggedIn', () => {
   vm.user = CurrentUserService.getUser();
-  $state.go("auctionsIndex");
+  $state.go('auctionsIndex');
 });
 
 vm.logout = () => {
@@ -16,7 +16,7 @@ vm.logout = () => {
   CurrentUserService.clearUser();
 };
 
-$rootScope.$on("loggedOut", () => {
+$rootScope.$on('loggedOut', () => {
   vm.user = null;
-  $state.go("home");});
-  
+  $state.go('home')});
+}
