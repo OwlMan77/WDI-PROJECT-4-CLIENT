@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app ="Diabetus">
   <head>
+  <base href="/">
     <meta charset="utf-8">
     <title>Diabetic Management system</title>
     <!-- inject:js -->
@@ -11,6 +12,8 @@
     <!-- endinject -->
   </head>
   <body ng-controller="MainCtrl as main">
-    
+    <main ui-view>
+    </main>
+    {{1 + 1}}
   </body>
 </html>

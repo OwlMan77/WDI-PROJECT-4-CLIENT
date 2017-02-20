@@ -1,6 +1,6 @@
 angular
 .module('Diabetus', [
-  'ui-router',
+  'ui.router',
   'ngResource',
   'angular-jwt'
 ]);
