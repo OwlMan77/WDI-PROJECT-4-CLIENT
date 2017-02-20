@@ -1,6 +1,6 @@
 
 angular
-.module('angularAuthentication', [
+.module('Diabetus', [
   'ui-router',
   'ngResource',
   'angular-jwt'
