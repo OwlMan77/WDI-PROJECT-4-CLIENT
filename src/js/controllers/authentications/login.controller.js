@@ -1,3 +1,8 @@
+angular
+.module('Diabetus')
+.controller('LoginCtrl', LoginCtrl)
+
+
 LoginCtrl.$inject = ['User'];
 function LoginCtrl(User) {
   const vm = this;

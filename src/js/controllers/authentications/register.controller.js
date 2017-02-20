@@ -1,3 +1,6 @@
+angular
+.module('Diabetus')
+.controller('RegisterCtrl', RegisterCtrl);
 RegisterCtrl.$inject = ['User'];
 function RegisterCtrl(User) {
   const vm    = this;
@@ -10,6 +13,6 @@ function RegisterCtrl(User) {
     }, err => {
       console.log(err);
     }
-  )
+  );
   };
 }
