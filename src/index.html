@@ -23,6 +23,9 @@
       <a ui-sref="login">Login</a>
     </li>
     <li ng-show="main.user">
+      <a ui-sref="usersShow({ id: main.user.id })">Profile</a>
+    </li>
+    <li ng-show="main.user">
       <a ng-click="main.logout()">Logout</a>
     </li>
   </ul>

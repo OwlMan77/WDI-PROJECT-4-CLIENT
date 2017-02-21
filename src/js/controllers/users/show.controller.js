@@ -2,8 +2,8 @@ angular
 .module('Diabetus')
 .controller('usersShowCtrl', usersShowCtrl)
 
-usersShowCtrl.$inject = ['User','$stateParams', '$resource']
-function usersShowCtrl(User, $stateParams, $resource){
+usersShowCtrl.$inject = ['User','$stateParams']
+function usersShowCtrl(User, $stateParams){
   const vm = this;
 
   vm.user = User.get($stateParams);
@@ -15,12 +15,4 @@ function usersShowCtrl(User, $stateParams, $resource){
       $state.go("home");
     });
   };
-
-
-  // const vm        = this;
-  // const User = $resource(`${API}/users/:id`,
-  // {id: '@_id'})
-  //
-  // vm.user = user.get($stateParams);
-
 }
