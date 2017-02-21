@@ -2,13 +2,14 @@ angular
 .module('Diabetus')
 .controller('MainCtrl', MainCtrl);
 
-MainCtrl.$inject =['$rootScope', 'CurrentUserService', '$state' ];
-function MainCtrl($rootScope, CurrentUserService, $state){
+MainCtrl.$inject =['$rootScope', 'CurrentUserService', '$state', 'TokenService' ];
+function MainCtrl($rootScope, CurrentUserService, $state, TokenService){
 const vm = this;
 vm.user = CurrentUserService.getUser();
+
 $rootScope.$on('loggedIn', () => {
   vm.user = CurrentUserService.getUser();
-  $state.go('register');
+  $state.go('userShow', {id: vm.user.id});
 });
 
 vm.logout = () => {

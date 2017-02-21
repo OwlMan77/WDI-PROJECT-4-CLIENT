@@ -4,8 +4,8 @@ angular
 
 Router.$inject = ['$stateProvider', '$locationProvider', '$urlRouterProvider'];
 function Router($stateProvider, $locationProvider, $urlRouterProvider){
-    $locationProvider.html5Mode(true);
-    $stateProvider
+  $locationProvider.html5Mode(true);
+  $stateProvider
   .state('home', {
     url: '/',
     templateUrl: '/js/views/home.html',
@@ -20,9 +20,12 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     url: '/register',
     templateUrl: '/js/views/register.html',
     controller: 'RegisterCtrl as register'
-})
-  .state('userShow'){
-    url: 'user/:id',
-    templateUrl: '/js/views/user/show.html'
-  }
+  })
+  .state('userShow', {
+    url: '/users/:id',
+    templateUrl: '/js/views/user/show.html',
+    controller: 'usersShowCtrl as userShow'
+  });
+
+  $urlRouterProvider.otherwise('/');
 }

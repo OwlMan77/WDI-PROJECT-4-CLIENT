@@ -3,8 +3,8 @@ angular
 .controller('LoginCtrl', LoginCtrl)
 
 
-LoginCtrl.$inject = ['User', 'TokenService'];
-function LoginCtrl(User, TokenService) {
+LoginCtrl.$inject = ['User', 'TokenService', 'CurrentUserService'];
+function LoginCtrl(User, TokenService, CurrentUserService) {
   const vm = this;
 
   vm.login = () => {
@@ -12,6 +12,7 @@ function LoginCtrl(User, TokenService) {
     .$promise
     .then(data => {
       TokenService.setToken(data.token);
+      CurrentUserService.saveUser(data.user);
   });
 }
 }
