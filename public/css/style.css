@@ -1,2 +1,12 @@
+.home .homeImage {
+  height: 200px;
+  width: 200px;
+  left: 43%;
+  position: relative;
+  background-size: cover;
+  background-image: url("https://image.flaticon.com/icons/png/512/45/45817.png"); }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzdHlsZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiIl0sImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.home .homeHeader1 {
+  text-align: center; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzdHlsZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLmhvbWUgLmhvbWVJbWFnZSB7XG4gIGhlaWdodDogMjAwcHg7XG4gIHdpZHRoOiAyMDBweDtcbiAgbGVmdDogNDMlO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcImh0dHBzOi8vaW1hZ2UuZmxhdGljb24uY29tL2ljb25zL3BuZy81MTIvNDUvNDU4MTcucG5nXCIpOyB9XG5cbi5ob21lIC5ob21lSGVhZGVyMSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjsgfVxuIl0sImZpbGUiOiJzdHlsZS5jc3MifQ== */

@@ -6,15 +6,15 @@ usersShowCtrl.$inject = ['User','$stateParams', '$resource']
 function usersShowCtrl(User, $stateParams, $resource){
   const vm = this;
 
-  // vm.user = User.get($stateParams);
-  //
-  // vm.userDelete = () => {
-  //   User
-  //   .delete($stateParams)
-  //   .$promise.then(data => {
-  //     $state.go("home");
-  //   });
-  // };
+  vm.user = User.get($stateParams);
+
+  vm.userDelete = () => {
+    User
+    .delete($stateParams)
+    .$promise.then(data => {
+      $state.go("home");
+    });
+  };
 
 
   // const vm        = this;
