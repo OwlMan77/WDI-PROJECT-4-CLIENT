@@ -14,5 +14,5 @@ function LoginCtrl(User, TokenService, CurrentUserService) {
       TokenService.setToken(data.token);
       CurrentUserService.saveUser(data.user);
   });
-}
+};
 }

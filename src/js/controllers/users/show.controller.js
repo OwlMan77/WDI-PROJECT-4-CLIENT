@@ -1,8 +1,8 @@
 angular
 .module('Diabetus')
-.controller('usersShowCtrl', usersShowCtrl)
+.controller('usersShowCtrl', usersShowCtrl);
 
-usersShowCtrl.$inject = ['User','$stateParams']
+usersShowCtrl.$inject = ['User','$stateParams'];
 function usersShowCtrl(User, $stateParams){
   const vm = this;
 

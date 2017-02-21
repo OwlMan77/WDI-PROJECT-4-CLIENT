@@ -3,7 +3,7 @@ angular
 .controller('bgTestsCtrl', bgTestsCtrl);
 
  bgTestsCtrl.$inject = ['Bg_Tests','TokenService', '$state'];
- function bgTestsCtrl(BgTests){
+ function bgTestsCtrl(Bg_Tests, TokenService, $state){
     const vm = this;
     vm.bg_Tests = Bg_Tests.query();
     if (!TokenService.getToken()){
