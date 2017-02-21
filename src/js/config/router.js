@@ -20,5 +20,9 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     url: '/register',
     templateUrl: '/js/views/register.html',
     controller: 'RegisterCtrl as register'
-});
+})
+  .state('userShow'){
+    url: 'user/:id',
+    templateUrl: '/js/views/user/show.html'
+  }
 }
