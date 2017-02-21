@@ -3,15 +3,18 @@
   <head>
   <base href="/">
     <meta charset="utf-8">
-    <title>Diabetic Management system</title>
+    <title>Diabetic Management System</title>
+    <link rel="stylesheet" href="/scss/style.scss">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <!-- inject:js -->
     <!-- endinject -->
     <!-- inject:css -->
     <!-- endinject -->
   </head>
   <body ng-controller="MainCtrl as main">
-    <nav>
+    <nav class="navbar navbar-default" role="navigation">
         <ul class="nav navbar-nav navbar-right">
+    
     <li ng-hide="main.user">
       <a ui-sref="register">Register</a>
     </li>
