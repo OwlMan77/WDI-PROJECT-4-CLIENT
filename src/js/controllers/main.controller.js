@@ -8,7 +8,7 @@ const vm = this;
 vm.user = CurrentUserService.getUser();
 $rootScope.$on('loggedIn', () => {
   vm.user = CurrentUserService.getUser();
-  $state.go('home');
+  $state.go('');
 });
 
 vm.logout = () => {

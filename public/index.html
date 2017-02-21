@@ -12,8 +12,23 @@
     <!-- endinject -->
   </head>
   <body ng-controller="MainCtrl as main">
+    <nav>
+        <ul class="nav navbar-nav navbar-right">
+    <li ng-hide="main.user">
+      <a ui-sref="register">Register</a>
+    </li>
+    <li ng-hide="main.user">
+      <a ui-sref="login">Login</a>
+    </li>
+    <li ng-show="main.user">
+      <a ui-sref="usersIndex">Users</a>
+    </li>
+    <li ng-show="main.user">
+      <a ng-click="main.logout()">Logout</a>
+    </li>
+  </ul>
+    </nav>
     <main ui-view>
     </main>
-    {{1 + 1}}
   </body>
 </html>
