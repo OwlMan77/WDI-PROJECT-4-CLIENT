@@ -1,9 +1,9 @@
 angular
 .module('Diabetus')
-.controller('bgTestsShowCtrl', bgTestsShowCtrl);
+.controller('bgTestsIndexCtrl', bgTestsIndexCtrl);
 
- bgTestsShowCtrl.$inject = ['Bg_Tests','TokenService', '$state'];
- function bgTestsShowCtrl(Bg_Tests, TokenService, $state){
+ bgTestsIndexCtrl.$inject = ['Bg_Tests','TokenService', '$state'];
+ function bgTestsIndexCtrl(Bg_Tests, TokenService, $state){
     const vm = this;
     vm.bg_Tests = Bg_Tests.query();
     if (!TokenService.getToken()){

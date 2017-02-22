@@ -31,6 +31,17 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     url: '/users/:id/update',
     templateUrl: '/js/views/users/edit.html',
     controller: 'usersUpdateCtrl as usersUpdate'
+  })
+  .state('usersDelete', {
+  url: '/users/:id/delete',
+  templateUrl: '/js/views/users/delete.controller',
+  controller: 'usersDeleteCtrl as usersDelete'
+  }
+  )
+  .state('userBgTests', {
+    url: '/users/:id/BgTests/',
+    templateUrl: '/js/views/bgTests/index.html',
+    controller: 'bgTestsIndexCtrl as bgIndex'
   });
 
   $urlRouterProvider.otherwise('/');
