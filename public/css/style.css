@@ -1,12 +1,16 @@
+.home section {
+  background-color: red; }
+
 .home .homeImage {
   height: 200px;
   width: 200px;
-  left: 43%;
+  left: 39%;
   position: relative;
   background-size: cover;
-  background-image: url("http://icons.veryicon.com/ico/System/Colorful%20Long%20Shadow/Drop.ico"); }
+  background-image: url("http://icons.veryicon.com/ico/System/Colorful%20Long%20Shadow/Drop.ico");
+  padding: 10px; }
 
 .home .homeHeader1 {
   text-align: center; }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzdHlsZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLmhvbWUgLmhvbWVJbWFnZSB7XG4gIGhlaWdodDogMjAwcHg7XG4gIHdpZHRoOiAyMDBweDtcbiAgbGVmdDogNDMlO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybChcImh0dHA6Ly9pY29ucy52ZXJ5aWNvbi5jb20vaWNvL1N5c3RlbS9Db2xvcmZ1bCUyMExvbmclMjBTaGFkb3cvRHJvcC5pY29cIik7IH1cblxuLmhvbWUgLmhvbWVIZWFkZXIxIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyOyB9XG4iXSwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzdHlsZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLmhvbWUgc2VjdGlvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJlZDsgfVxuXG4uaG9tZSAuaG9tZUltYWdlIHtcbiAgaGVpZ2h0OiAyMDBweDtcbiAgd2lkdGg6IDIwMHB4O1xuICBsZWZ0OiAzOSU7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiaHR0cDovL2ljb25zLnZlcnlpY29uLmNvbS9pY28vU3lzdGVtL0NvbG9yZnVsJTIwTG9uZyUyMFNoYWRvdy9Ecm9wLmljb1wiKTtcbiAgcGFkZGluZzogMTBweDsgfVxuXG4uaG9tZSAuaG9tZUhlYWRlcjEge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7IH1cbiJdLCJmaWxlIjoic3R5bGUuY3NzIn0= */

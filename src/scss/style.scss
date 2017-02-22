@@ -3,15 +3,20 @@
 
   //--------------------------------HomePage-------------------------------------------\\
   .home{
+    section{
+      background-color: red;
+    }
     .homeImage{
       height: 200px;
       width: 200px;
-      left : 43%;
+      left : 39%;
       position: relative;
       background-size: cover;
-      background-image: url('http://icons.veryicon.com/ico/System/Colorful%20Long%20Shadow/Drop.ico')
+      background-image: url('http://icons.veryicon.com/ico/System/Colorful%20Long%20Shadow/Drop.ico');
+      padding: 10px;
     }
     .homeHeader1{
       text-align: center;
     }
+
   }
