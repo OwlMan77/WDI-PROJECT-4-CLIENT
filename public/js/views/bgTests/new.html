@@ -1,0 +1,16 @@
+<section class="BgTestNew">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h1>Add a Test</h1>
+        <form ng-submit="bgNew.create()">
+          <div class="form-group">
+            <label>Blood Glucose Result</label>
+            <input class="form-control" type="float" name="bg_result" ng-model="bgNew.bg_test.bg_result" placeholder="mmol/l">
+          </div>
+          <input class="btn btn-primary btn-block" type="submit" value="Create company" />
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

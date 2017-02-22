@@ -5,6 +5,7 @@ angular
 usersDeleteCtrl.$inject = ['User','$state', '$stateParams', 'CurrentUserService'];
 function usersDeleteCtrl(User, $state, $stateParams, CurrentUserService) {
   const vm = this;
+
   vm.delete = () =>{
     User.delete($stateParams)
     .$promise

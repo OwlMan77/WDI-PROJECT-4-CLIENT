@@ -42,7 +42,12 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     url: '/users/:id/bgtests',
     templateUrl: '/js/views/bgTests/index.html',
     controller: 'bgTestsIndexCtrl as bgIndex'
-  });
+  })
+  .state('userBgTestsNew', {
+    url: '/users/:id/bgtests/new',
+    templateUrl: '/js/views/bgTests/new.html',
+    controller: 'bgTestsNewCtrl as bgNew'
+  })
 
   $urlRouterProvider.otherwise('/');
 }
