@@ -1,2 +1,7 @@
 Hi {{usersShow.user.first_name}}!
-{{usersShow.user.ideal_bg}}
+
+<h3>Current medications</h3>
+<ul>
+  <li ng-repeat="medication in usersShow.user.medications">{{medication.name}}</li>
+</ul>
+{{usersShow.user.medications[1].name}}
