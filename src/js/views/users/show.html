@@ -4,4 +4,5 @@ Hi {{usersShow.user.first_name}}!
 <ul>
   <li ng-repeat="medication in usersShow.user.medications">{{medication.name}}</li>
 </ul>
-{{usersShow.user.medications[1].name}}
+
+<button class="btn btn-danger" name="button" ui-sref="usersDelete({ id: usersShow.user.id})">Delete Account</button>

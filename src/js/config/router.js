@@ -39,7 +39,7 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
   }
   )
   .state('userBgTests', {
-    url: '/users/:id/BgTests/',
+    url: '/users/:id/bgtests',
     templateUrl: '/js/views/bgTests/index.html',
     controller: 'bgTestsIndexCtrl as bgIndex'
   });
