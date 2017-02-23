@@ -1,8 +1,8 @@
 angular
 .module('Diabetus')
-.controller('bgTestsNewCtrl', bgTestsNewCtrl)
+.controller('bgTestsNewCtrl', bgTestsNewCtrl);
 
-bgTestsNewCtrl.$inject = ['$state', 'BgTest']
+bgTestsNewCtrl.$inject = ['$state', 'BgTest'];
 function bgTestsNewCtrl($state, BgTest){
   const vm = this;
 
