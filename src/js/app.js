@@ -2,5 +2,6 @@ angular
 .module('Diabetus', [
   'ui.router',
   'ngResource',
-  'angular-jwt'
+  'angular-jwt',
+  'chart.js'
 ]);

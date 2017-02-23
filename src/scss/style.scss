@@ -1,10 +1,11 @@
 // Import all of your scss files here
-
+@import "variables";
+@import "typography";
 
   //--------------------------------HomePage-------------------------------------------\\
   .home{
     section{
-      background-color: #1BE7FF;
+      background-color: $primary-color;
     }
     .homeImage{
       height: 200px;

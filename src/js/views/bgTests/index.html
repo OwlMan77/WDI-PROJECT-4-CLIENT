@@ -13,32 +13,11 @@
 <ul>
   <li ng-repeat="bg_result in bgIndex.bg_tests | orderBy: 'bg_result.date| limitTo: 5'">{{bg_result.bg_result}} mmol/l @ {{bg_result.time}} on {{bg_result.date}}</li>
 </ul>
-</section>
-<!--
-ideas? <div ng-init="friends = [{name:'John', phone:'555-1276'},
-                         {name:'Mary', phone:'800-BIG-MARY'},
-                         {name:'Mike', phone:'555-4321'},
-                         {name:'Adam', phone:'555-5678'},
-                         {name:'Julie', phone:'555-8765'},
-                         {name:'Juliette', phone:'555-5678'}]"></div>
+<div class="">
+  <canvas id="line" class="chart chart-line" chart-data="data"
+  chart-labels="labels" chart-series="series" chart-options="options"
+  chart-dataset-override="datasetOverride" chart-click="onClick">
+  </canvas>
+</div>
 
-<label>Search: <input ng-model="searchText"></label>
-<table id="searchTextResults">
-  <tr><th>Name</th><th>Phone</th></tr>
-  <tr ng-repeat="friend in friends | filter:searchText">
-    <td>{{friend.name}}</td>
-    <td>{{friend.phone}}</td>
-  </tr>
-</table>
-<hr>
-<label>Any: <input ng-model="search.$"></label> <br>
-<label>Name only <input ng-model="search.name"></label><br>
-<label>Phone only <input ng-model="search.phone"></label><br>
-<label>Equality <input type="checkbox" ng-model="strict"></label><br>
-<table id="searchObjResults">
-  <tr><th>Name</th><th>Phone</th></tr>
-  <tr ng-repeat="friendObj in friends | filter:search:strict">
-    <td>{{friendObj.name}}</td>
-    <td>{{friendObj.phone}}</td>
-  </tr>
-</table> -->
+</section>
