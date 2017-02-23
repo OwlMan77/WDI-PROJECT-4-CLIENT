@@ -2,8 +2,8 @@ angular
   .module('Diabetus')
   .controller('usersUpdateCtrl', usersUpdateCtrl);
 
-usersUpdateCtrl.$inject = ['User', '$state', '$stateParams'];
-function usersUpdateCtrl(User, $state, $stateParams) {
+usersUpdateCtrl.$inject = ['User','Medication', '$state', '$stateParams'];
+function usersUpdateCtrl(User, Medication, $state, $stateParams) {
   const vm = this;
   User
   .get($stateParams)
@@ -12,12 +12,18 @@ function usersUpdateCtrl(User, $state, $stateParams) {
     vm.user = response;
   });
 
+  Medication.query()
+  .$promise
+  .then(data => {
+    vm.medications = data;
+  });
 
   vm.update = () => {
     User
     .update($stateParams, { user: vm.user })
     .$promise
     .then(data => {
+      console.log(data);
       //need to put stateparamas to get user back to page as we need the id for the revelant page.
       $state.go('usersShow', $stateParams);
     });

@@ -74,6 +74,6 @@ function bgTestsIndexCtrl(BgTest, $state, $stateParams, User, $scope){
       }
 
       vm.bg_tests.sort(compare);
-  }
+  };
 
 }

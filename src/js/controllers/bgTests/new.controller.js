@@ -5,7 +5,7 @@ angular
 bgTestsNewCtrl.$inject = ['$state','$stateParams', 'BgTest', 'User'];
 function bgTestsNewCtrl($state, $stateParams, BgTest, User){
   const vm = this;
-  vm.user = User.get($stateParams)
+  vm.user = User.get($stateParams);
   vm.create = () => {
     BgTest
       .save(vm.bg_test)

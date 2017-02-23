@@ -2,7 +2,7 @@
   <div data-ng-controller="bgTestsNewCtrl">
   <form ng-submit="bgIndex.create()">
     <div class="form-group">
-      <label for "bg_result">Blood Glucose Result</label>
+      <label> Blood Glucose Result</label>
       <input class="form-control" type="number" name="bg_result" ng-model="bgIndex.bg_test.bg_result" placeholder="mmol/l" ng-pattern="/^[1-90]+(\.[0-9]{1,1})?$/" step="0.1" required>
     </div>
     <input class="btn btn-primary btn-block" type="submit" value="Add Test" />
@@ -11,7 +11,7 @@
     </div>
     <h3>Last 5 Tests</h3>
 <ul>
-  <li ng-repeat="bg_result in bgIndex.bg_tests | orderBy: 'bg_result.date| limitTo: 5'">{{bg_result.bg_result}} mmol/l @ {{bg_result.readTime}} on {{bg_result.readDate}}</li>
+  <li ng-repeat="bg_result in bgIndex.bg_tests | orderBy: 'bg_result.date'| limitTo: 5: 0">{{bg_result.bg_result}} mmol/l @ {{bg_result.readTime}} on {{bg_result.readDate}}</li>
 </ul>
 <div class="Graph">
   <canvas id="line" class="chart chart-line" chart-data="data"
