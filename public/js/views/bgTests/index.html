@@ -13,7 +13,7 @@
 <ul>
   <li ng-repeat="bg_result in bgIndex.bg_tests | orderBy: 'bg_result.date| limitTo: 5'">{{bg_result.bg_result}} mmol/l @ {{bg_result.readTime}} on {{bg_result.readDate}}</li>
 </ul>
-<div class="">
+<div class="Graph">
   <canvas id="line" class="chart chart-line" chart-data="data"
   chart-labels="labels" chart-series="series" chart-options="options"
   chart-dataset-override="datasetOverride" chart-click="onClick">

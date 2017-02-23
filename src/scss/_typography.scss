@@ -3,9 +3,11 @@ h1 {
 }
 
 h2,h3,h4,h5,h6 {
+  font-family: $heading-font;
   font-weight: 100;
 }
 
 html, body {
+  $body-font: 'Lato', sans-serif;
   font-size:20px;
 }

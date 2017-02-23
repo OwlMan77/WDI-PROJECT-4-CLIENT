@@ -1,0 +1,36 @@
+//--------------------------------BgIndex-------------------------------------------\\
+.bg-Index{
+  label{
+    font-size: 50px;
+  }
+  input{
+    height: 100px;
+    font-size: 50px;
+  }
+  ul{
+    list-style: none;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-device-width: 667px)
+and (orientation : landscape)
+and (-webkit-device-pixel-ratio: 2) {
+  .bg-Index{
+    h2, h3{
+      display: none;
+    }
+    label{
+      display: none;
+    }
+    input{
+    display: none;
+    }
+    ul{
+      display: none;
+    }
+    li{
+      display: none;
+    }
+}
+}
