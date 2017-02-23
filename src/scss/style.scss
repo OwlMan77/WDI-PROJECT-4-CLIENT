@@ -4,6 +4,7 @@
 
 @import "pages/bgTests/index";
 @import "pages/bgTests/new";
+@import "pages/users/edit";
 // @media only screen and (max-device-width: 667px)
 //     and (-webkit-device-pixel-ratio: 2) {
   //--------------------------------HomePage-------------------------------------------\\
@@ -17,7 +18,7 @@
       left : 39%;
       position: relative;
       background-size: cover;
-      background-image: url('http://icons.veryicon.com/ico/System/Colorful%20Long%20Shadow/Drop.ico');
+      background-image: url('/images/Blood-glucose.png');
       padding: 10px;
     }
     .homeHeader1{
@@ -25,14 +26,9 @@
     }
 
   }
-//--------------------------------UsersUpdate-------------------------------------------\\
-
-.users-update{
-  label{
-    font-size:50px;
-  }
-  .form-control{
-  height: 75px;
-  font-size: 40px;
+//--------------------------Index-----------------------------------------------\\
+.navbar-brand{
+  img{
+    width: 50px;
   }
 }

@@ -9,13 +9,12 @@
         <label> Last Name:<input class="form-control ncf" type="text" name="lastName" ng-model="usersUpdate.user.last_name" value="usersUpdate.user.last_name"></label>
       </div>
       <div class="form-group ncfg">
-        <label> Ideal BG<input class="form-control ncf" type="text" name="idealBg" ng-model="usersUpdate.user.
-        ideal_bg" value="usersUpdate.user.ideal_Bg"></label>
+        <label> Ideal BG<input class="form-control ncf" type="text" name="idealBg" ng-model="usersUpdate.user.ideal_bg" value="usersUpdate.user.ideal_Bg"></label>
       </div>
       <div class="form-group ncfg">
         <label> Medication
-        <select class="form-control ncf" type="text" name="medications" ng-model="usersUpdate.user.
-        medications" ><option ng-repeat="medication in usersUpdate.medications" value="{{medication.medication_id.id}}">{{medication.name}}</option>
+        <select class="form-control ncf" type="text" name="medications" ng-model="usersUpdate.user.medication_id">
+        <option ng-repeat="medication in usersUpdate.medications" value="{{medication.id}}">{{medication.name}}</option>
         </select>
         </label>
       </div>

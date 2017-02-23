@@ -19,8 +19,9 @@ function usersUpdateCtrl(User, Medication, $state, $stateParams) {
   });
 
   vm.update = () => {
+    vm.user.medication_id = parseInt(vm.user.medication_id);
     User
-    .update($stateParams, { user: vm.user })
+    .update($stateParams, vm.user)
     .$promise
     .then(data => {
       console.log(data);
