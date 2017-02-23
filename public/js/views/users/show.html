@@ -1,8 +1,14 @@
-Hi {{usersShow.user.first_name}}!
+<section class="users-show">
+
+
+<h1>Hi {{usersShow.user.first_name}}!</h1>
+<h2>Your current ideal Blood Glucose is: {{usersShow.user.ideal_bg}}mmol/l</h2>
 <h3>Current medications</h3>
 <ul>
   <li ng-repeat="medication in usersShow.user.medications">{{medication.name}}</li>
 </ul>
 
-<button class="btn btn-danger" name="button" ui-sref="usersDelete({ id: usersShow.user.id})">Delete Account</button>
-<button class="btn btn-primary" name="button" ui-sref="usersUpdate({ id: usersShow.user.id})">Edit Account</button>
+<button class="btn-block btn-primary" name="button" ui-sref="usersUpdate({ id: usersShow.user.id})">Edit Account</button>
+<button class="btn-block btn-danger" name="button" ui-sref="usersDelete({ id: usersShow.user.id})">Delete Account</button>
+
+</section>
