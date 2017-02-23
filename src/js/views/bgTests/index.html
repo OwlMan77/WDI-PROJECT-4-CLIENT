@@ -11,7 +11,7 @@
     </div>
     <h3>Last 5 Tests</h3>
 <ul>
-  <li ng-repeat="bg_result in bgIndex.bg_tests | orderBy: 'bg_result.date| limitTo: 5'">{{bg_result.bg_result}} mmol/l @ {{bg_result.time}} on {{bg_result.date}}</li>
+  <li ng-repeat="bg_result in bgIndex.bg_tests | orderBy: 'bg_result.date| limitTo: 5'">{{bg_result.bg_result}} mmol/l @ {{bg_result.readTime}} on {{bg_result.readDate}}</li>
 </ul>
 <div class="">
   <canvas id="line" class="chart chart-line" chart-data="data"

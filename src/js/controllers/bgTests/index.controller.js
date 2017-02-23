@@ -16,7 +16,7 @@ function bgTestsIndexCtrl(BgTest, $state, $stateParams, User, $scope){
     vm.bg_tests = data;
     vm.sortDates();
     vm.bg_tests.forEach((test) => {
-      $scope.labels.push(`${test.date} @ ${test.time}`);
+      $scope.labels.push(`${test.readDate} @ ${test.readTime}`);
       bgData.push(test.bg_result);
     });
     $scope.data.push(bgData);
@@ -72,6 +72,7 @@ function bgTestsIndexCtrl(BgTest, $state, $stateParams, User, $scope){
         return 1;
         return 0;
       }
+
       vm.bg_tests.sort(compare);
   }
 
