@@ -3,10 +3,11 @@
     <div class="row">
       <div>
         <h1>Add a Test</h1>
+        <h2>Your Ideal bg is {{bgNew.user.ideal_bg}}</h2>
         <form ng-submit="bgNew.create()">
           <div class="form-group">
             <label>Blood Glucose Result</label>
-            <input class="form-control" type="float" name="bg_result" ng-model="bgNew.bg_test.bg_result" placeholder="mmol/l">
+            <input class="form-control" type="number" name="bg_result" ng-model="bgNew.bg_test.bg_result" placeholder="mmol/l" ng-pattern="/^[1-90]+(\.[0-9]{1,1})?$/" step="0.1">
             <input class="form-control" type="date" name="date" ng-model="bgNew.bg_test.date" placeholder="date of test">
             <input class="form-control" type="time" name="time" ng-model="bgNew.bg_test.time" placeholder="time of test">
           </div>

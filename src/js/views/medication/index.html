@@ -1,5 +1,7 @@
 <section class="medicationsIndex container">
 <ul>
-  <li ng-repeat="medication in medicationsIndex">{{medications}}</li>
+  <li ng-repeat="medication in medicationIndex.medications">{{medication.name}}
+    Currently using: {{medication.patients
+}}</li>
 </ul>
 </section>

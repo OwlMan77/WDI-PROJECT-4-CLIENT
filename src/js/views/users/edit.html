@@ -3,14 +3,19 @@
     <h1>Edit Your Profile</h1>
     <form ng-submit="usersUpdate.update({user})">
       <div class="form-group ncfg">
-        <input class="form-control ncf" type="text" name="firstName" ng-model="usersUpdate.user.first_name" value="usersUpdate.user.first_name">
+        <label> First Name:<input class="form-control ncf" type="text" name="firstName" ng-model="usersUpdate.user.first_name" value="usersUpdate.user.first_name">
+      </div></label>
+      <div class="form-group ncfg">
+        <label> Last Name:<input class="form-control ncf" type="text" name="lastName" ng-model="usersUpdate.user.last_name" value="usersUpdate.user.last_name"></label>
       </div>
       <div class="form-group ncfg">
-        <input class="form-control ncf" type="text" name="lastName" ng-model="usersUpdate.user.last_name" value="usersUpdate.user.last_name">
+        <label for> Ideal BG<input class="form-control ncf" type="text" name="idealBg" ng-model="usersUpdate.user.
+        ideal_bg" value="usersUpdate.user.ideal_Bg"></label>
       </div>
       <div class="form-group ncfg">
-        <input class="form-control ncf" type="text" name="idealBg" ng-model="usersUpdate.user.
-        ideal_bg" value="usersUpdate.user.ideal_Bg">
+        <label> Medication
+        <input class="form-control ncf" type="text" name="medications" ng-model="usersUpdate.user.
+        medications[0].id" ></label>
       </div>
       <input class="btn btn-default" type="submit" value="Submit" />
       <button class="btn btn-default" ui-sref ="usersShow({id: main.user.id})" type="button" name="button">Back</button>
