@@ -26,6 +26,12 @@
       <a ui-sref="usersShow({ id: main.user.id })">Profile</a>
     </li>
     <li ng-show="main.user">
+      <a ui-sref="userBgTests">BGs</a>
+    </li>
+    <li ng-show="main.user">
+      <a ui-sref="userBgTestsNew">Add a BG</a>
+    </li>
+    <li ng-show="main.user">
       <a ng-click="main.logout()">Logout</a>
     </li>
   </ul>

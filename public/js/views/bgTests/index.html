@@ -1,11 +1,16 @@
 <section class="bgIndex container">
+  <div data-ng-controller="bgTestsNewCtrl">
+  <form ng-submit="bgTestsNewCtrl.create()">
+    <div class="form-group">
+      <label>Blood Glucose Result</label>
+      <input class="form-control" type="float" name="bg_result" ng-model="bgTestsNewCtrl.bg_test.bg_result" placeholder="mmol/l">
+    </div>
+    <input class="btn btn-primary btn-block" type="submit" value="Add Test" />
+  </form>
+    </div>
 <ul>
   <li ng-repeat="bg_result in bgIndex.bg_tests">{{bg_result.bg_result}} {{bg_result.date}} {{bg_result.time}}</li>
 </ul>
-
-
-
-
 </section>
 <!--
 ideas? <div ng-init="friends = [{name:'John', phone:'555-1276'},

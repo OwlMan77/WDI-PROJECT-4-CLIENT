@@ -7,6 +7,8 @@
           <div class="form-group">
             <label>Blood Glucose Result</label>
             <input class="form-control" type="float" name="bg_result" ng-model="bgNew.bg_test.bg_result" placeholder="mmol/l">
+            <input class="form-control" type="date" name="date" ng-model="bgNew.bg_test.date" placeholder="date of test">
+            <input class="form-control" type="time" name="time" ng-model="bgNew.bg_test.time" placeholder="time of test">
           </div>
           <input class="btn btn-primary btn-block" type="submit" value="Add Test" />
         </form>
