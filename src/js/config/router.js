@@ -48,6 +48,11 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider){
     templateUrl: '/js/views/bgTests/new.html',
     controller: 'bgTestsNewCtrl as bgNew'
   })
+  .state('medications', {
+    url: '/medications',
+    templateUrl: '/js/views/medication/index.html',
+    controller: 'medicationsIndexCtrl as medicationIndex'
+  });
 
   $urlRouterProvider.otherwise('/');
 }

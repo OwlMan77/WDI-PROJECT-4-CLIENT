@@ -9,6 +9,6 @@ function medicationsIndexCtrl(Medication, $state){
   .query()
   .$promise
   .then(data => {
-    vm.bg_tests = data;
+    vm.medications = data;
   });
   }
