@@ -16,7 +16,7 @@
     <!-- endinject -->
   </head>
   <body ng-controller="MainCtrl as main">
-    <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -27,8 +27,8 @@
       </button>
       <a class="navbar-brand" ui-sref="home"><img src="/images/blood-drop.png"></a>
     </div>
+    <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-
     <li ng-hide="main.user">
       <a ui-sref="register">Register</a>
     </li>
@@ -52,7 +52,8 @@
     </li>
   </ul>
   </div>
-    </nav>
+</div>
+</nav>
     <main ui-view>
     </main>
   </body>
