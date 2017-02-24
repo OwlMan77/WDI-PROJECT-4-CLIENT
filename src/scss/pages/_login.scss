@@ -1,0 +1,15 @@
+@media only screen and (max-device-width: 667px)
+and (orientation : portrait)
+and (-webkit-device-pixel-ratio: 2) {
+  .login{
+    h1{
+      font-size: 70px;
+    }
+    .form-control{
+    height: 170px;
+    font-size: 50px;
+    margin-top: 40px;
+    font-family: $heading-font;
+  }
+}
+}

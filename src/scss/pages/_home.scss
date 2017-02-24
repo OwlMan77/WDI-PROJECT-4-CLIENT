@@ -1,0 +1,82 @@
+.home{
+  li{
+    font-size: 25px;
+  }
+  .sentence1{
+  text-align: center;
+  }
+
+  h1{
+    font-size: 70px;
+    color: #000000;
+  }
+
+  button{
+    position: relative;
+    left: 43%;
+    border-radius: 10%;
+    display: none;
+  }
+  .intro{
+    margin-top: -20px;
+    background-color: $primary-color;
+    padding: 20px;
+  }
+
+  .homeImage{
+    height: 200px;
+    width: 200px;
+    left : 39%;
+    position: relative;
+    background-size: cover;
+    background-image: url('/images/Blood-glucose.png');
+    padding: 10px;
+  }
+  .homeImage2{
+    height: 150px;
+    width: 150px;
+    left : 39%;
+    position: relative;
+    background-size: cover;
+    background-image: url('/images/blood-drop.png');
+    padding: 10px;
+  }
+
+  .homeHeader1{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-device-width: 667px)
+and (orientation : landscape)
+and (-webkit-device-pixel-ratio: 2) {
+.home{
+  .intro{
+    padding: 5px;
+}
+}
+}
+@media only screen and (max-device-width: 667px)
+and (orientation : portrait)
+and (-webkit-device-pixel-ratio: 2) {
+.home{
+  .intro{
+    padding: 5px;
+  }
+  .sentence1{
+    font-size: 70px;
+  }
+  p,li{
+    font-size: 45px
+  }
+  .homeImage2{
+    height: 200px;
+    width: 200px;
+    left : 39%;
+    position: relative;
+    background-size: cover;
+    background-image: url('/images/blood-drop.png');
+    padding: 10px;
+  }
+}
+}

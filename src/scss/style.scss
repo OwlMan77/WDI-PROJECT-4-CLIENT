@@ -1,42 +1,12 @@
 // Import all of your scss files here
 @import "variables";
 @import "typography";
+@import "NavBar/navBar";
+
+@import "pages/index";
+@import "pages/home";
 
 @import "pages/bgTests/index";
 @import "pages/bgTests/new";
 @import "pages/users/edit";
-@import "pages/index";
-// @media only screen and (max-device-width: 667px)
-//     and (-webkit-device-pixel-ratio: 2) {
-  //--------------------------------HomePage-------------------------------------------\\
-  .home{
-    h1{
-      color: #000000;
-    }
-    section{
-      background-color: $primary-color;
-    }
-
-    button{
-      position: relative;
-      top: 20%;
-      left: 47%;
-    }
-    .intro{
-      margin-top: -18px;
-      padding: 20px;
-    }
-    .homeImage{
-      height: 200px;
-      width: 200px;
-      left : 39%;
-      position: relative;
-      background-size: cover;
-      background-image: url('/images/Blood-glucose.png');
-      padding: 10px;
-    }
-    .homeHeader1{
-      text-align: center;
-    };
-
-  }
+@import "pages/login";
