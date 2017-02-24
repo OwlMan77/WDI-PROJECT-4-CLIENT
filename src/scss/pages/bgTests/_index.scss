@@ -1,7 +1,14 @@
 //--------------------------------BgIndex-------------------------------------------\\
+
+@media only screen and (max-device-width: 667px)
+and (orientation : portrait)
+and (-webkit-device-pixel-ratio: 2) {
 .bg-Index{
+  h2, h3{
+    font-size: 40px;
+  }
   label{
-    font-size: 50px;
+    font-size: 70px;
   }
   input{
     height: 100px;
@@ -11,6 +18,13 @@
     list-style: none;
     font-size: 35px;
   }
+  .bgIndex{
+    position: relative;
+    bottom: -100px;
+    width: 400px;
+    left: 150px
+  }
+}
 }
 
 @media only screen and (max-device-width: 667px)
