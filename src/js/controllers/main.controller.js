@@ -9,7 +9,7 @@ vm.user = CurrentUserService.getUser();
 
 $rootScope.$on('loggedIn', () => {
   vm.user = CurrentUserService.getUser();
-  $state.go('usersShow', {id: vm.user.id});
+  $state.go('userBgTests', {id: vm.user.id});
 });
 
 vm.logout = () => {
