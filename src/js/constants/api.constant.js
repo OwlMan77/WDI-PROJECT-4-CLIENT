@@ -1,3 +1,3 @@
 angular
 .module('Diabetus')
-.constant('API', 'https://localhost:3000');
+.constant('API', 'https://fathomless-taiga-24861.herokuapp.com/');
