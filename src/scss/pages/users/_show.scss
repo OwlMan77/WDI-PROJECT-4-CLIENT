@@ -1,13 +1,10 @@
 //--------------------------------UsersShow-------------------------------------------\\
 .users-show{
-  button {
-    font-size: 45px;
-  }
   h1{
     font-size: 100px;
   }
   h2{
-    font-size: 40px
+    font-size: 20px
   }
   h3{
     font-size: 50px;
@@ -21,19 +18,23 @@
 and (orientation : portrait)
 and (-webkit-device-pixel-ratio: 2) {
   .users-show{
-    button {
-      height: 200px;
+
+    .btn-block{
+      height: 300px;
     }
     h1{
-      font-size: 100px;
+      text-align: center;
     }
     h2{
-      font-size: 40px
+      text-align: center;
+      font-size: 45px;
+      font-weight: bolder;
     }
-    h3{
-      font-size: 50px;
+    button{
+      position: relative;
+      top: 200px;
+      font-size: 100px;
     }
-    li{
-      font-size: 35px;
-    }
+
   }
+}
