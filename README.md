@@ -29,19 +29,20 @@ To add a historic blood glucose result click the **Add Historic BG**.
 
 ###Model Plannning
 
-I finished my model planning with a simple relationship structure.
+When building my Ruby on Rails/sql api, I finished my model planning with a simple relationship structure.
 ![model](https://lh3.googleusercontent.com/BMVEr-AQh6Q6KnfaU0CWTonq0zjcMrn8_BpEXQ4llJugVVSxStxR78-WKTrao5i-8ULI78TizWar0m8r1jPXerMu-ASfGLTCP8nmFZ4w-SmftbU3Vlb9NUk66XLJnHf4KPYvFYnybPht5c4hbhBG-ZlQ6FyklrT3TPPyHesOH_R22AnQHe3eaZINxHSV70M1gf_5xe52uxlKHu_LVHOCjAkaW-hm5LaUrTgnvLTwvs5MP4Nj0ykWWj1wzWRd9as1R7eSCFQflA_KiUCSQTJv1CTSRBxwStuUZRBv-rx_sawVCIkPH35k1qGdDlV06TcUvFgAWcbMVCSzxtm7MGXOfukrTn3QfMoLCyrtDTmF30Qsk1C6nAR75t5-YegQTDb2Q06iOrMMlSaBSLc7e9GmbCTnH0tWLEkvoBxs1YF6RIKHdYaFp0xxm4ZWPH7d6-MFaLgZAJo4xcCXnJRS69mUrygo-9ww2tXE6h6nX3IIod8hUmrMsC-2cN2RY7xnUwYa3cT-AflB2NB-ghB_hKJzUXzBzgRN1mBkjDqlgVYXF35QJKelc6_IorlPouVYFqN_gp2mivKq=w1440-h666)
 
 * User has many medications and many Bg_tests
 * Medications have many users 
 * Bg_tests only have one user
 
+Using the bg_test serializer I created two additional values, readTime and readDate. These where creat 
 
 
 ##Front End 
 
 Before full starting my project from the front-end. I ensured that JWT token authentication was my first priority. 
-To do this I created a token factory  and current user service using Angular.  
+To do this I created a token factory and current user service using Angular.  
 
 
 ##What I would of done differently?
